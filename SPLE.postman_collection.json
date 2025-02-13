@@ -1,0 +1,1038 @@
+{
+	"info": {
+		"_postman_id": "6b74ef70-ccb3-459b-89b0-ac48c20d1727",
+		"name": "SPLE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34753910"
+	},
+	"item": [
+		{
+			"name": "Address Controller",
+			"item": [
+				{
+					"name": "Add Address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkzMDQxMzEsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.6e17L3gfW4ohpP5l8ELifDbKrQzYDaxpkXmaPWFKIsY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkyNjUzODcsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY2\n",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"street\": \"Oakwood Avenue\",\n  \"buildingName\": \"Sunrise Tower\",\n  \"city\": \"Los Angeles\",\n  \"state\": \"California\",\n  \"country\": \"United States\",\n  \"pincode\": \"900150\"\n}\n\n\n// [\n//   {\n//     \"street\": \"Jalan Merdeka Raya\",\n//     \"buildingName\": \"Graha Indah\",\n//     \"city\": \"Jakarta\",\n//     \"state\": \"DKI Jakarta\",\n//     \"country\": \"Indonesia\",\n//     \"pincode\": \"10110\"\n//   },\n  {\n    \"street\": \"Jalan Sudirman\",\n    \"buildingName\": \"Menara Citra\",\n    \"city\": \"Bandung\",\n    \"state\": \"Jawa Barat\",\n    \"country\": \"Indonesia\",\n    \"pincode\": \"40111\"\n  }\n//   {\n//     \"street\": \"Jalan Diponegoro\",\n//     \"buildingName\": \"Puri Sentosa\",\n//     \"city\": \"Surabaya\",\n//     \"state\": \"Jawa Timur\",\n//     \"country\": \"Indonesia\",\n//     \"pincode\": \"60241\"\n//   },\n//   {\n//     \"street\": \"Jalan Ahmad Yani\",\n//     \"buildingName\": \"Taman Sari Tower\",\n//     \"city\": \"Semarang\",\n//     \"state\": \"Jawa Tengah\",\n//     \"country\": \"Indonesia\",\n//     \"pincode\": \"50123\"\n//   },\n//   {\n//     \"street\": \"Jalan Gajah Mada\",\n//     \"buildingName\": \"Grand Harmony\",\n//     \"city\": \"Medan\",\n//     \"state\": \"Sumatera Utara\",\n//     \"country\": \"Indonesia\",\n//     \"pincode\": \"20152\"\n//   },\n//   {\n//     \"street\": \"Jalan Panglima Polim\",\n//     \"buildingName\": \"Elite Residence\",\n//     \"city\": \"Jakarta\",\n//     \"state\": \"DKI Jakarta\",\n//     \"country\": \"Indonesia\",\n//     \"pincode\": \"12160\"\n//   },\n//   {\n//     \"street\": \"Jalan Slamet Riyadi\",\n//     \"buildingName\": \"Solo Mansion\",\n//     \"city\": \"Solo\",\n//     \"state\": \"Jawa Tengah\",\n//     \"country\": \"Indonesia\",\n//     \"pincode\": \"57145\"\n//   },\n//   {\n//     \"street\": \"Jalan Veteran\",\n//     \"buildingName\": \"Green Leaf Apartment\",\n//     \"city\": \"Makassar\",\n//     \"state\": \"Sulawesi Selatan\",\n//     \"country\": \"Indonesia\",\n//     \"pincode\": \"90134\"\n//   },\n//   {\n//     \"street\": \"Jalan Imam Bonjol\",\n//     \"buildingName\": \"Sejahtera Tower\",\n//     \"city\": \"Denpasar\",\n//     \"state\": \"Bali\",\n//     \"country\": \"Indonesia\",\n//     \"pincode\": \"80119\"\n//   },\n//   {\n//     \"street\": \"Jalan Kartini\",\n//     \"buildingName\": \"Bumi Asri\",\n//     \"city\": \"Yogyakarta\",\n//     \"state\": \"DI Yogyakarta\",\n//     \"country\": \"Indonesia\",\n//     \"pincode\": \"55221\"\n//   }\n// ]\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_SPLE}}api/admin/address",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"admin",
+								"address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkzMDQxMzEsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.6e17L3gfW4ohpP5l8ELifDbKrQzYDaxpkXmaPWFKIsY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_SPLE}}api/admin/addresses",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"admin",
+								"addresses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Detail Address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkzMDQxMzEsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.6e17L3gfW4ohpP5l8ELifDbKrQzYDaxpkXmaPWFKIsY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_SPLE}}api/admin/addresses/10",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"admin",
+								"addresses",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkyNjcwMDQsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.BnC5xs0aoUZJjboopAJkivGww0zh1ZTpqlZv3yCwgW4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"addressId\": 19,\n  \"street\": \"Jl. Diponegoro XXXX\",\n  \"buildingName\": \"Apartemen Bintang\",\n  \"city\": \"Surabaya\",\n  \"state\": \"Jawa Timur\",\n  \"country\": \"Indonesia\",\n  \"pincode\": \"602410\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_SPLE}}api/admin/addresses/19",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"admin",
+								"addresses",
+								"19"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Adddress",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkyNjYxMjMsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.YR-6eYBfYy17E-8IvvefL8M118M8l_Gw3o35KlhxNj8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_SPLE}}api/admin/addresses/19",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"admin",
+								"addresses",
+								"19"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth Controller",
+			"item": [
+				{
+					"name": "Create Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": \"00000020\",\n    \"firstName\": \"Olivia\",\n    \"lastName\": \"Thomas\",\n    \"mobileNumber\": \"0810000111\",\n    \"email\": \"olivia.thomas@gmail.com\",\n    \"password\": \"oliviaPass_000\",\n    \"roles\": [\n        {\n            \"roleId\": 103,\n            \"roleName\": \"USER\"\n        }\n    ],\n    \"address\": {\n        \"addressId\": 1020,\n        \"street\": \"Jl. Pahlawan\",\n        \"buildingName\": \"Olivia's Residence\",\n        \"city\": \"Malang\",\n        \"state\": \"Jawa Timur\",\n        \"country\": \"Indonesia\",\n        \"pincode\": \"651110\"\n    },\n    \"cart\": {\n        \"cartId\": 20,\n        \"totalPrice\": 75000,\n        \"products\": [\n            {\n                \"productId\": 120,\n                \"productName\": \"Portable Speaker\",\n                \"image\": \"speaker.jpg\",\n                \"description\": \"Waterproof Bluetooth portable speaker\",\n                \"quantity\": 1,\n                \"price\": 75000,\n                \"discount\": 0,\n                \"specialPrice\": 75000\n            }\n        ]\n    }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_SPLE}}api/register",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "// {\n//   \"email\": \"alice.admin@gmail.com\",\n//   \"password\": \"alicePass_123\"\n// }\n\n// {\n//   \"email\": \"bob.user@gmail.com\",\n//   \"password\": \"bobPass_456\"\n// }\n\n// {\n//   \"email\": \"charlie.admin@gmail.com\",\n//   \"password\": \"charliePass_789\"\n// }\n\n// {\n//   \"email\": \"david.user@gmail.com\",\n//   \"password\": \"davidPass_012\"\n// }\n\n// {\n//   \"email\": \"emma.admin@gmail.com\",\n//   \"password\": \"emmaPass_345\"\n// }\n\n// {\n//   \"email\": \"frank.user@gmail.com\",\n//   \"password\": \"frankPass_678\"\n// }\n\n// {\n//   \"email\": \"grace.admin@gmail.com\",\n//   \"password\": \"gracePass_901\"\n// }\n\n// {\n//   \"email\": \"hannah.user@gmail.com\",\n//   \"password\": \"hannahPass_234\"\n// }\n\n// {\n//   \"email\": \"ian.admin@gmail.com\",\n//   \"password\": \"ianPass_567\"\n// }\n\n// {\n//   \"email\": \"jack.user@gmail.com\",\n//   \"password\": \"jackPass_890\"\n// }\n\n\n// {\n//   \"email\": \"kelly.admin@gmail.com\",\n//   \"password\": \"kellyPass_111\"\n// }\n\n{\n  \"email\": \"kelly.admin@gmail.com\",\n  \"password\": \"kellyPass_111\"\n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_SPLE}}api/login",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart Controller",
+			"item": [
+				{
+					"name": "Get Admin Carts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkzMDQxMzEsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.6e17L3gfW4ohpP5l8ELifDbKrQzYDaxpkXmaPWFKIsY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_SPLE}}api/admin/carts",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"admin",
+								"carts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product From Cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkyNzIzMTMsImVtYWlsIjoiamFjay51c2VyQGdtYWlsLmNvbSJ9.qAXtjX5bNZcQcl7SmbwoQlWUBPfqRR7tMFo51Gcnijk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_SPLE}}api/public/carts/3/product/7",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"public",
+								"carts",
+								"3",
+								"product",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Quantity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkyNjcwMDQsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.BnC5xs0aoUZJjboopAJkivGww0zh1ZTpqlZv3yCwgW4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{API_SPLE}}api/public/carts/3/products/7/quantity/4",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"public",
+								"carts",
+								"3",
+								"products",
+								"7",
+								"quantity",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Quantity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkyNzIzMTMsImVtYWlsIjoiamFjay51c2VyQGdtYWlsLmNvbSJ9.qAXtjX5bNZcQcl7SmbwoQlWUBPfqRR7tMFo51Gcnijk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{API_SPLE}}api/public/carts/10/products/4/quantity/2",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"public",
+								"carts",
+								"10",
+								"products",
+								"4",
+								"quantity",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Email Cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkyNjcwMDQsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.BnC5xs0aoUZJjboopAJkivGww0zh1ZTpqlZv3yCwgW4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_SPLE}}api/public/users/bob.user@gmail.com/carts/3",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"public",
+								"users",
+								"bob.user@gmail.com",
+								"carts",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Create Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkzMDQxMzEsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.6e17L3gfW4ohpP5l8ELifDbKrQzYDaxpkXmaPWFKIsY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\n//   {\n//     \"categoryId\": 1,\n//     \"categoryName\": \"Electronics\"\n//   }\n//   {\n//     \"categoryId\": 2,\n//     \"categoryName\": \"Computers\"\n//   }\n//   {\n//     \"categoryId\": 3,\n//     \"categoryName\": \"Accessories\"\n//   }\n//   {\n//     \"categoryId\": 4,\n//     \"categoryName\": \"Audio\"\n//   }\n//   {\n//     \"categoryId\": 5,\n//     \"categoryName\": \"Storage\"\n//   }\n\n// {\n//     \"categoryId\": 6,\n//     \"categoryName\": \"Gaming\"\n//   }\n//   {\n//     \"categoryId\": 7,\n//     \"categoryName\": \"Home Appliances\"\n//   }\n//   {\n//     \"categoryId\": 8,\n//     \"categoryName\": \"Furniture\"\n//   }\n//   {\n//     \"categoryId\": 9,\n//     \"categoryName\": \"Clothing\"\n//   }\n//   {\n//     \"categoryId\": 10,\n//     \"categoryName\": \"Footwear\"\n//   }\n//   {\n//     \"categoryId\": 11,\n//     \"categoryName\": \"Sports & Outdoors\"\n//   }\n//   {\n//     \"categoryId\": 12,\n//     \"categoryName\": \"Books\"\n//   }\n//   {\n//     \"categoryId\": 13,\n//     \"categoryName\": \"Toys & Games\"\n//   }\n//   {\n//     \"categoryId\": 14,\n//     \"categoryName\": \"Beauty & Personal Care\"\n//   }\n  {\n    // \"categoryId\": 15,\n    \"categoryName\": \"Motor\"\n  }\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_SPLE}}api/admin/category",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"admin",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkzMjE5ODAsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.ei02G-EmZ3VCEWm33CD7VwvQS69BM269b9i1XPYUKO4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_SPLE}}api/public/categories",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"public",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkzMDQxMzEsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.6e17L3gfW4ohpP5l8ELifDbKrQzYDaxpkXmaPWFKIsY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_SPLE}}api/admin/categories/3",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"admin",
+								"categories",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkyNjcwMDQsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.BnC5xs0aoUZJjboopAJkivGww0zh1ZTpqlZv3yCwgW4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"categoryName\": \"Automotivei\"\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_SPLE}}/api/admin/categories/14",
+							"host": [
+								"{{API_SPLE}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"categories",
+								"14"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Add Products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkzMDQxMzEsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.6e17L3gfW4ohpP5l8ELifDbKrQzYDaxpkXmaPWFKIsY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "// ID 1 CATEGORY ELECTRONICS\n// {\n//         \"productId\": 101,\n//         \"productName\": \"Smartphone X1\",\n//         \"image\": \"smartphone_x1.jpg\",\n//         \"description\": \"Latest model with high-end specs.\",\n//         \"quantity\": 50,\n//         \"price\": 699.99,\n//         \"discount\": 10.0,\n//         \"specialPrice\": 629.99\n//       }\n// {\n//         \"productId\": 102,\n//         \"productName\": \"Smartwatch Pro\",\n//         \"image\": \"smartwatch_pro.jpg\",\n//         \"description\": \"Waterproof smartwatch with heart rate monitor.\",\n//         \"quantity\": 100,\n//         \"price\": 199.99,\n//         \"discount\": 15.0,\n//         \"specialPrice\": 169.99\n//       }\n// {\n//         \"productId\": 103,\n//         \"productName\": \"Wireless Earbuds\",\n//         \"image\": \"wireless_earbuds.jpg\",\n//         \"description\": \"Noise-canceling true wireless earbuds.\",\n//         \"quantity\": 200,\n//         \"price\": 129.99,\n//         \"discount\": 20.0,\n//         \"specialPrice\": 103.99\n// }\n// {\n//         \"productId\": 104,\n//         \"productName\": \"4K Smart TV\",\n//         \"image\": \"4k_smart_tv.jpg\",\n//         \"description\": \"55-inch UHD smart TV with HDR support.\",\n//         \"quantity\": 30,\n//         \"price\": 799.99,\n//         \"discount\": 12.0,\n//         \"specialPrice\": 703.99\n//       }\n// {\n//         \"productId\": 105,\n//         \"productName\": \"Bluetooth Speaker\",\n//         \"image\": \"bluetooth_speaker.jpg\",\n//         \"description\": \"Portable speaker with deep bass.\",\n//         \"quantity\": 150,\n//         \"price\": 89.99,\n//         \"discount\": 10.0,\n//         \"specialPrice\": 80.99\n//       }\n//   {\n//     \"productId\": 106,\n//     \"productName\": \"VR Headset\",\n//     \"image\": \"vr_headset.jpg\",\n//     \"description\": \"Immersive VR experience for gaming.\",\n//     \"quantity\": 50,\n//     \"price\": 399.99,\n//     \"discount\": 15.0,\n//     \"specialPrice\": 339.99\n//   }\n//  {\n//     \"productId\": 107,\n//     \"productName\": \"Gaming Console\",\n//     \"image\": \"gaming_console.jpg\",\n//     \"description\": \"Next-gen console with 8K support.\",\n//     \"quantity\": 25,\n//     \"price\": 499.99,\n//     \"discount\": 10.0,\n//     \"specialPrice\": 449.99\n//   }\n//    {\n//     \"productId\": 108,\n//     \"productName\": \"Wireless Charger\",\n//     \"image\": \"wireless_charger.jpg\",\n//     \"description\": \"Fast charging pad for smartphones.\",\n//     \"quantity\": 200,\n//     \"price\": 39.99,\n//     \"discount\": 5.0,\n//     \"specialPrice\": 37.99\n//   }\n// {\n//     \"productId\": 109,\n//     \"productName\": \"Action Camera\",\n//     \"image\": \"action_camera.jpg\",\n//     \"description\": \"Waterproof 4K action camera.\",\n//     \"quantity\": 80,\n//     \"price\": 299.99,\n//     \"discount\": 10.0,\n//     \"specialPrice\": 269.99\n//   }\n//  {\n//     \"productId\": 110,\n//     \"productName\": \"Laptop Cooling Pad\",\n//     \"image\": \"laptop_cooling_pad.jpg\",\n//     \"description\": \"Ultra-slim cooling pad with dual fans.\",\n//     \"quantity\": 150,\n//     \"price\": 29.99,\n//     \"discount\": 10.0,\n//     \"specialPrice\": 26.99\n//   }\n// =====\n// CATEGORY 2\n// {\n//         \"productName\": \"Gaming Laptop\",\n//         \"image\": \"gaming_laptop.jpg\",\n//         \"description\": \"High-performance laptop with RTX graphics.\",\n//         \"quantity\": 30,\n//         \"price\": 1599.99,\n//         \"discount\": 10.0,\n//         \"specialPrice\": 1439.99\n//       }\n//   {\n//     \"productName\": \"Mechanical Keyboard\",\n//     \"image\": \"mechanical_keyboard.jpg\",\n//     \"description\": \"RGB backlit keyboard with mechanical switches.\",\n//     \"quantity\": 100,\n//     \"price\": 129.99,\n//     \"discount\": 10.0,\n//     \"specialPrice\": 116.99\n//   }\n//   {\n//     \"productName\": \"Gaming Mouse\",\n//     \"image\": \"gaming_mouse.jpg\",\n//     \"description\": \"Ergonomic gaming mouse with high DPI.\",\n//     \"quantity\": 120,\n//     \"price\": 69.99,\n//     \"discount\": 10.0,\n//     \"specialPrice\": 62.99\n//   }\n//   {\n//     \"productName\": \"Gaming Monitor\",\n//     \"image\": \"gaming_monitor.jpg\",\n//     \"description\": \"144Hz refresh rate gaming monitor.\",\n//     \"quantity\": 45,\n//     \"price\": 299.99,\n//     \"discount\": 12.0,\n//     \"specialPrice\": 263.99\n//   }\n//   {\n//     \"productName\": \"Webcam 1080p\",\n//     \"image\": \"webcam_1080p.jpg\",\n//     \"description\": \"Full HD webcam with built-in microphone.\",\n//     \"quantity\": 80,\n//     \"price\": 59.99,\n//     \"discount\": 5.0,\n//     \"specialPrice\": 56.99\n//   }\n//   {\n//     \"productName\": \"USB Hub\",\n//     \"image\": \"usb_hub.jpg\",\n//     \"description\": \"4-port USB hub for better connectivity.\",\n//     \"quantity\": 150,\n//     \"price\": 24.99,\n//     \"discount\": 10.0,\n//     \"specialPrice\": 22.49\n//   }\n//   {\n//     \"productName\": \"Portable SSD\",\n//     \"image\": \"portable_ssd.jpg\",\n//     \"description\": \"500GB high-speed portable SSD.\",\n//     \"quantity\": 100,\n//     \"price\": 99.99,\n//     \"discount\": 10.0,\n//     \"specialPrice\": 89.99\n//   }\n   {\n     \"productName\": \"Graphics Tablet\",\n     \"image\": \"graphics_tablet.jpg\",\n     \"description\": \"Professional drawing tablet with pen.\",\n     \"quantity\": 40,\n     \"price\": 199.99,\n     \"discount\": 15.0,\n     \"specialPrice\": 169.99\n   }\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_SPLE}}api/admin/categories/1/product",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"admin",
+								"categories",
+								"1",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkzMDQxMzEsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.6e17L3gfW4ohpP5l8ELifDbKrQzYDaxpkXmaPWFKIsY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productName\": \"Wireless Keyboard\",\n    \"image\": \"default.png\",\n    \"description\": \"Compact wireless keyboard and mouse combo.\",\n    \"quantity\": 90,\n    \"price\": 49.99,\n    \"discount\": 10.0,\n    \"specialPrice\": 44.991\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_SPLE}}api/admin/products/53",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"admin",
+								"products",
+								"53"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkyNjcwMDQsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.BnC5xs0aoUZJjboopAJkivGww0zh1ZTpqlZv3yCwgW4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_SPLE}}api/admin/products/53",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"admin",
+								"products",
+								"53"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Image",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{API_SPLE}}api/admin/products/{id}/image",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"admin",
+								"products",
+								"{id}",
+								"image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Detail Products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkzMDQxMzEsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.6e17L3gfW4ohpP5l8ELifDbKrQzYDaxpkXmaPWFKIsY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_SPLE}}api/public/products",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"public",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Keyword",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkyNjcwMDQsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.BnC5xs0aoUZJjboopAJkivGww0zh1ZTpqlZv3yCwgW4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_SPLE}}api/public/products/keyword/XXX",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"public",
+								"products",
+								"keyword",
+								"XXX"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get Detail User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkzMDQxMzEsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.6e17L3gfW4ohpP5l8ELifDbKrQzYDaxpkXmaPWFKIsY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_SPLE}}api/admin/users",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"admin",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkyNzU2MjMsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.5lFgABqyn7kZbuGwbJ7yoD19WR1RsVsNuSZnJrIFU6I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_SPLE}}api/admin/users/11",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"admin",
+								"users",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Detail Public User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkzMDQxMzEsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.6e17L3gfW4ohpP5l8ELifDbKrQzYDaxpkXmaPWFKIsY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_SPLE}}api/public/users/1",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"public",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkyNjcwMDQsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.BnC5xs0aoUZJjboopAJkivGww0zh1ZTpqlZv3yCwgW4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"firstName\": \"Userrss\",\n    \"lastName\": \"Lastssss\",\n    \"mobileNumber\": \"0800000001\",\n    \"email\": \"user1@example.com\",\n    \"password\": \"SecurePass123!\",\n    \"roles\": [\n      {\n        \"roleId\": 101,\n        \"roleName\": \"ADMIN\"\n      }\n    ],\n    \"address\": {\n      \"addressId\": 1,\n      \"street\": \"Street 1\",\n      \"buildingName\": \"Building 1\",\n      \"city\": \"City Example\",\n      \"state\": \"State Example\",\n      \"country\": \"Country Example\",\n      \"pincode\": \"100010\"\n    },\n    \"cart\": {\n      \"cartId\": 1,\n      \"totalPrice\": 0,\n      \"products\": []\n    }\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_SPLE}}api/public/users/10",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"public",
+								"users",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Get Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkzMjE5ODAsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.ei02G-EmZ3VCEWm33CD7VwvQS69BM269b9i1XPYUKO4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_SPLE}}api/admin/orders",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"admin",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Email Order Status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkyNjcwMDQsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.BnC5xs0aoUZJjboopAJkivGww0zh1ZTpqlZv3yCwgW4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{API_SPLE}}api/admin/users/{email}/carts/{cartsId}/payments/{paymentMethod}/order",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"admin",
+								"users",
+								"{email}",
+								"carts",
+								"{cartsId}",
+								"payments",
+								"{paymentMethod}",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Cart Payment",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkyNzQyOTUsImVtYWlsIjoiamFjay51c2VyQGdtYWlsLmNvbSJ9.aSmie1a33F4J7ZWFkkKO_Jg1VAnGl5w5mF_zr5q2atA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"payment\": {\n        \"paymentID\": 1,\n        \"paymentMethod\":  \"Credit Card\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_SPLE}}api/public/users/david.user@gmail.com/carts/5/payments/QRIS/order",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"public",
+								"users",
+								"david.user@gmail.com",
+								"carts",
+								"5",
+								"payments",
+								"QRIS",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Email Orders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyIERldGFpbHMiLCJpc3MiOiJFdmVudCBTY2hlZHVsZXIiLCJpYXQiOjE3MzkyNjcwMDQsImVtYWlsIjoia2VsbHkuYWRtaW5AZ21haWwuY29tIn0.BnC5xs0aoUZJjboopAJkivGww0zh1ZTpqlZv3yCwgW4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_SPLE}}api/public/users/{email}/orders",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"public",
+								"users",
+								"{email}",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Email Order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_SPLE}}api/public/users/{email}/orders/{OrderID}",
+							"host": [
+								"{{API_SPLE}}api"
+							],
+							"path": [
+								"public",
+								"users",
+								"{email}",
+								"orders",
+								"{OrderID}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "API_SPLE",
+			"value": "http://localhost:8080/"
+		}
+	]
+}
