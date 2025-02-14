@@ -17,6 +17,8 @@ import com.app.config.AppConstants;
 import com.app.payloads.OrderDTO;
 import com.app.payloads.OrderResponse;
 import com.app.services.OrderService;
+import com.app.enums.BankEnums;
+import com.app.payloads.BankResponse;
 
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 
@@ -68,4 +70,9 @@ public class OrderController {
 		return new ResponseEntity<OrderDTO>(order, HttpStatus.OK);
 	}
 
+	@GetMapping("/public/banks")
+	public ResponseEntity<List<BankResponse>> getAllBanks() {
+		List<BankResponse> banks = BankEnums.getAllBank();
+		return new ResponseEntity<List<BankResponse>>(banks, HttpStatus.FOUND);
+	}
 }

@@ -30,6 +30,7 @@ import com.app.repositories.OrderItemRepo;
 import com.app.repositories.OrderRepo;
 import com.app.repositories.PaymentRepo;
 import com.app.repositories.UserRepo;
+import com.app.enums.BankEnums;
 
 import jakarta.transaction.Transactional;
 
@@ -81,9 +82,16 @@ public class OrderServiceImpl implements OrderService {
 		order.setTotalAmount(cart.getTotalPrice());
 		order.setOrderStatus("Order Accepted !");
 
+		if(!BankEnums.checkBankByPaymentMethod(paymentMethod)) {
+			throw new ResourceNotFoundException("Payment", "PaymentMethod", paymentMethod);
+		}
+
+		BankEnums bank = BankEnums.valueOf(paymentMethod.toUpperCase());
+
 		Payment payment = new Payment();
 		payment.setOrder(order);
-		payment.setPaymentMethod(paymentMethod);
+		payment.setPaymentMethod(bank.name());
+		payment.setPaymentNumber(bank.getBankNumber());
 
 		payment = paymentRepo.save(payment);
 
